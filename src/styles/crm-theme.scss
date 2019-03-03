@@ -1,0 +1,74 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$mat-primary: (
+    50 : #e0e7f0,
+    100 : #b3c3da,
+    200 : #809cc2,
+    300 : #4d74a9,
+    400 : #265696,
+    500 : #003884,
+    600 : #00327c,
+    700 : #002b71,
+    800 : #002467,
+    900 : #001754,
+    A100 : #869cff,
+    A200 : #5372ff,
+    A400 : #2048ff,
+    A700 : #0733ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+$mat-secondary: (
+  50 : #f9e6ec,
+  100 : #efc1cf,
+  200 : #e498b0,
+  300 : #d96f90,
+  400 : #d15078,
+  500 : #c93160,
+  600 : #c32c58,
+  700 : #bc254e,
+  800 : #b51f44,
+  900 : #a91333,
+  A100 : #ffdae1,
+  A200 : #ffa7b7,
+  A400 : #ff748e,
+  A700 : #ff5b79,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$candy-app-primary: mat-palette($mat-primary);
+$candy-app-accent:  mat-palette($mat-secondary);
+$candy-app-warn:    mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+@include angular-material-theme($candy-app-theme);

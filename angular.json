@@ -27,6 +27,10 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input":"src/styles/crm-theme.scss"
+              },
+              
               "src/styles/styles.scss",
               "src/styles/bootstrap/scss/bootstrap.scss"
             ],
