@@ -1,0 +1,16 @@
+/****************RESPONSIVE DESIGN ATTRS*****************/
+
+@media screen and (min-width: 690px) {
+  /* start of web styles */
+  [responsive-mobile] {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 689px) {
+  /* start of mobile styles */
+  [responsive-default] {
+    display: none !important;
+  }
+}
