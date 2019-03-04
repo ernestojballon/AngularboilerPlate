@@ -10,7 +10,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 
 const matModules = [
-
+  
+  MatDialogModule,
   MatButtonModule,
   MatCheckboxModule,
   MatIconModule,

@@ -1,22 +1,26 @@
 
 <div  class="login">
   <div >
-    <div class="d-flex w-100">
+    <mat-card class="d-flex w-100 bg-secondary">
       <span class="mr-auto p-2" ><img src="./assets/img/logo.png"></span>
       <div class=" d-flex justify-content-end flex-column my-2" responsive-default >
         <form class="form-inline  mr-5" (submit)="login()">
+
           <div class="form-group ">
             <input matInput type="text" [formControl]="userField" class="form-control form-control-xs" placeholder="username">
-            
           </div>
+
           <div class="form-group mx-sm-3">
             <input matInput type="password" [formControl]="pwdField" class="form-control form-control-xs" placeholder="password">
           </div>
-          <button mat-raised-button type="submit" class="btn btn-outline-primary border border-primary" [disabled]="userField.invalid || pwdField.invalid">{{ 'Sign in'}}</button>
+
+          <button mat-raised-button type="submit" class="btn btn-outline-primary border border-primary" [disabled]="userField.invalid || pwdField.invalid">{{'Sign in'}}</button>
         </form>
-        <span color="primary" class="ml-2 mat-small pointer-event d-block"> I forgot my password  </span>
+
+        <span class="ml-2 mat-small pointer-event d-block text-primary"> I forgot my password  </span>
+
       </div>
-    </div>
+    </mat-card>
     
   </div>
 </div>

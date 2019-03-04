@@ -32,7 +32,9 @@
               },
               
               "src/styles/styles.scss",
-              "src/styles/bootstrap/scss/bootstrap.scss"
+              "src/styles/bootstrap/scss/bootstrap.scss",
+              "src/styles/toastr/toastr.scss"
+
             ],
             "scripts": []
           },
