@@ -30,3 +30,6 @@ export interface LoginModel {
   pages: PageModel[];
   authorization: AuthModel;
 }
+export interface Token{
+  token: string;
+}

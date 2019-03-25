@@ -8,7 +8,7 @@ import {NgxSpinnerService} from 'ngx-spinner';
 import {ToastrService} from 'ngx-toastr';
 
 import { MatDialog } from '@angular/material';
-import { LoginModel } from 'src/app/services/http/models/user/UserLogin';
+import { LoginModel,Token} from 'src/app/services/http/models/user/UserLogin';
 
 @Component({
   selector: 'app-login',
@@ -31,10 +31,10 @@ export class LoginComponent implements OnInit {
   }
   login(){
     this.spinner.show();
-    this.service.Authenticate(this.userField.value, this.pwdField.value).subscribe(
-      (data: LoginModel) => {
+    this.service.Authenticate2(this.userField.value, this.pwdField.value).subscribe(
+      (data: Token) => {
         console.log(data);
-        this.service.setCurrentLogin(data);
+        //this.service.setCurrentLogin(data);
         //this.router.navigate(['home']);
         this.spinner.hide();
       },
